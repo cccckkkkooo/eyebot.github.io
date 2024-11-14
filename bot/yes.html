@@ -1,0 +1,238 @@
+<html>
+<head>
+<title>ГЛАЗ БОГА | EYE OF GOD</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="Бот, который найдёт о человеке всё. Поиск номеров телефона, профилей в социальных сетях, адресов, фото, геолокаций.">
+<style>
+@font-face {
+  font-family: 'Archive';
+  src:url('files/Archive-Regular.otf');
+}
+@font-face {
+  font-family: 'Jost';
+  src:url('files/Jost-Regular.ttf');
+}
+
+html,body 
+{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+	background-color: #F8EEE0;
+	text-color: #161616;
+}
+.item
+{
+	background-color: #F8EEE0;
+    width: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+h1 {
+	display:block;
+	font-family: 'Archive';
+	text-align: center;
+	color: #161616;
+	font-size: 39px;
+	margin: 0px;
+}
+.info1 {
+	font-family: 'Jost';
+	text-align: center;
+	color: #161616;
+	font-size: 18px;
+	text-transform: uppercase;
+	margin-top: 32px;
+}
+.info2 {
+	margin-top: 20px;
+	margin-bottom: 38px;
+	display: flex;
+	align-items: center;  
+	justify-content: center;
+	flex-direction: row;
+}
+.col1 {
+	width: 180px;
+	height: 180px;
+	background: url('files/logo.gif') no-repeat center center;
+}
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+ul {
+	margin-left: 83px;
+}
+li {
+	list-style: disc;
+	padding-left: 8px;
+	font-family: 'Jost';
+	color: #161616;
+	font-size: 16px;
+	line-height: 34px;
+}
+
+.timerInfo {
+	font-family: 'Jost';
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+a {
+	display: block;
+	width: 588px;
+	text-align: center;
+	color: #161616;
+	text-decoration: none;
+	border: 1px solid #161616;
+}
+a span {
+	font-family: Archive;
+	font-size: 19px;
+	line-height: 59px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 50px;
+	background: url('files/white.gif') no-repeat right center;
+}
+
+a:hover {
+	color: white;
+	background-color: #161616;
+	text-decoration: none;
+	border: 1px solid #161616;
+}
+a:hover span {
+	background: url('files/black.gif') no-repeat right center;
+}
+
+@media screen and (max-width: 640px) {
+.item
+{
+	padding: 10px;
+}
+h1 {
+	font-size: 27px;
+}
+.col1 {
+	width: 140px;
+	height: 140px;
+	background: url('files/logo.gif') no-repeat center center;
+	background-size: cover;
+	margin: 25px 0;
+}
+.info1 {
+	font-size: 14px;
+	margin-top: 15px;
+}
+.info2 {
+	flex-direction: column;
+	margin-top: 0px;
+	margin-bottom: 25px;
+}
+ul {
+	margin-left: 10px;
+}
+li {
+	line-height: 23px;
+}
+a {
+	width: 100%;
+}
+}
+
+@media screen and (max-width: 360px) {
+.item
+{
+	padding: 10px;
+}
+h1 {
+	font-size: 23px;
+}
+.info1 {
+	font-size: 14px;
+	margin-top: 15px;
+}
+.info2 {
+	margin-top: 10px;
+	margin-bottom: 25px;
+}
+ul {
+	margin-left: 5px;
+}
+.col1 {
+	margin: 20px 0;
+	width: 78px;
+	height: 78px;
+	background: url('files/logo.gif') no-repeat center center;
+	background-size: cover;
+}
+li {
+	padding-left: 3px;
+	line-height: 20px;
+}
+a span {
+	padding-right: 37px;
+}
+}
+</style>
+<script>
+function timer()
+{
+t=document.getElementById('sec').innerText;
+
+if (t>1) 
+{
+	t=t-1
+	document.getElementById('sec').innerText=t;
+	
+	sec='секунд';
+	if (t>1 && t<5) sec=sec+'ы';
+	else if (t==1) sec=sec+'у';
+	document.getElementById('sec2').innerText=sec;
+	
+	setTimeout(timer, 1000);
+}
+else redirect();
+}
+
+function redirect()
+{
+link='https://t.me/Geduddud_bot';  <!-- Прямой путь на бота -->
+window.location=link;
+}
+</script>
+</head>
+<body onload="setTimeout(timer, 1000);">
+<div class="item">
+<h1>ГЛАЗ БОГА  | EYE OF GOD</h1>
+<div class="info1">Бот, который найдёт о человеке всё:</div>
+<div class="info2">
+	<div class="col1"></div>
+	<div class="col2">
+		<ul>
+			<li>Номер телефона</li>
+			<li>Профили в соцсетях</li>
+			<li>Telegram, Instagram</li>
+			<li>Ф.И.О.</li>
+			<li>Адрес проживания</li>
+			<li>Номер автомобиля</li>
+			<li>Фото</li>
+			<li>Геолокацию</li>
+		</ul>
+	</div>
+</div>
+<div class="timerInfo">Через <b id="sec">0</b> <span id="sec1000">секунд</span> вас перекинет на актуальную версию бота...</div>
+<a href="#" onclick="redirect();return false;"><span>ПЕРЕЙТИ В БОТ</span></a>
+</div>
+</body>
+</html>
